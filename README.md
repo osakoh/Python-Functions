@@ -1,4 +1,4 @@
-## Implementation of some built-in Python functions.
+## Implementation of some built-in Python functions from The Complete Python Course by @tecladocode.
 
 ---
 ### contents:
