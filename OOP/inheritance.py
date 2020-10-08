@@ -13,17 +13,25 @@ class WorkingStudent(Student):
         super().__init__(name, school)  # calls Student __init__()
         self.salary = salary
 
+    @property
     def salary_per_week(self):
+        """
+        returns the weekly salary
+        """
         return self.salary * 15
 
+    @property
     def salary_per_month(self):
-        return self.salary_per_week() * 4
+        """
+        returns the monthly salary
+        """
+        return self.salary_per_week * 4
 
 
 sau = WorkingStudent('Sau', 'ECE', 12.50)
 print(sau.salary)
-print(sau.salary_per_week())
-print(sau.salary_per_month())
+print(sau.salary_per_week)
+print(sau.salary_per_month)
 
 sau.marks.append(74)
 sau.marks.append(85)
