@@ -28,13 +28,13 @@ class WorkingStudent(Student):
         return self.salary_per_week * 4
 
 
-sau = WorkingStudent('Sau', 'ECE', 12.50)
-print(sau.salary)
-print(sau.salary_per_week)
-print(sau.salary_per_month)
+s = Student('Sau', 'ECE')
 
-sau.marks.append(74)
-sau.marks.append(85)
-sau.marks.append(90)
 
-print(sau.average())
+s.marks.append(74)
+s.marks.append(85)
+s.marks.append(90)
+
+print(s.average())
+
+# print(Student.average(s))
